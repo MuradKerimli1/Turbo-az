@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turbo Az</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="first">
+          <ul>
+            <li>
+              <a
+                href="https://tap.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1nkaobt*_ga*MTcxOTU4MDQ1Mi4xNzEyOTkwODAx*_ga_68B6PJZXYD*MTcxNDI0MjA0NS4zLjAuMTcxNDI0MjA0NS42MC4wLjA."
+                >Tap.az</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://bina.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1djo9yr*_ga*MTcxOTU4MDQ1Mi4xNzEyOTkwODAx*_ga_68B6PJZXYD*MTcxNDI0MjA0NS4zLjAuMTcxNDI0MjA0NS42MC4wLjA."
+                >Bina.az</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://boss.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1djo9yr*_ga*MTcxOTU4MDQ1Mi4xNzEyOTkwODAx*_ga_68B6PJZXYD*MTcxNDI0MjA0NS4zLjAuMTcxNDI0MjA0NS42MC4wLjA."
+                >Boss.az</a
+              >
+            </li>
+          </ul>
+
+          <ul class="help">
+            <li>Dəstək: <span>(012) 505-77-55</span></li>
+            <li><a href="https://turbo.az/help">Yardım</a></li>
+            <li><a href="ru.turbo.az">RU</a></li>
+            <li>
+              <a href="https://turbo.az/bookmarks">
+                <i class="fa-solid fa-heart"></i> Seçilmişlər</a
+              >
+            </li>
+            <li>
+              <a href="https://turbo.az/bookmarks#authentication"
+                ><i class="fa-solid fa-circle-user"></i> Giriş</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <ul>
+            <li>
+              <h1><a href="https://turbo.az/">TURBO.AZ</a></h1>
+            </li>
+            <li>Bütün elanlar</li>
+            <li>Salonlar</li>
+            <li>Moto</li>
+            <li>Ehtiyat hissələr və aksesuarlar</li>
+            <li>İcarə</li>
+          </ul>
+
+          <button><i class="fa-solid fa-circle-plus"></i> Yeni elan</button>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="one-filter">
+          <!-- Marka Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <div class="marka_div">
+            <div onclick="chooseMark(this)" class="mark">
+              Marka <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="hidden_div">
+              <ul id="markaAll">
+                <li class="mmark" onclick="chooseMarkLi(this)">
+                  <i class="fa-solid fa-x"></i>Sıfırla
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Marka Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <!-- Model Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.> -->
+
+          <div class="model_div disabledd">
+            <div onclick="chooseModel(this)" id="model" class="model">
+              Model <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="hiddenndiv">
+              <ul id="modelAll">
+                <li class="mmodel" onclick="chooseModelLi(this)">
+                  <input type="checkbox" />
+                  <i class="fa-solid fa-x"></i> Sıfırla
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Model Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.> -->
+
+          <div class="yeni">
+            <article   class="yenispan">Hamısı</article>
+            <article class="yenispan">Yeni</article>
+            <article class="yenispan">Sürülmüş</article>
+          </div>
+
+          <!-- seher Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <div class="seherdiv marka_div">
+            <div onclick="chooseseher(this)" class="seherrr mark">
+              Şəhər<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="hiddendiv">
+              <ul id="seherAll">
+                <li class="sseher mmark" onclick="chooSeseherLi(this)">
+                  <i class="fa-solid fa-x"></i>Sıfırla
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- seher Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <div class="MinMax">
+            <input id="minIl" type="text" class="input1" placeholder="Qiymət, min." />
+            <input id="maxIl" type="text" class="input2" placeholder="maks." />
+           
+          </div>
+
+          <div class="dsp">
+            <!-- pul mezennesinin html>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+            
+            <div class="valyuta">
+              <div class="pul" onclick="choosePul()">
+                  <span id="pulsec">AZN</span>
+                  <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="pulhdndiv" id="pulAll">
+                  <ul id="pulAll">
+                      <li onclick="choosePulli('AZN')">AZN</li>
+                      <li onclick="choosePulli('USD')">USD</li>
+                      <li onclick="choosePulli('EUR')">EUR</li>
+                      
+                  </ul>
+              </div>
+          </div>
+          
+
+            <!-- pul mezennesinin html>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+            <div class="credit">
+              <span> Kredit </span>
+              <span>Barter</span>
+            </div>
+          </div>
+          <!-- ban novu Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <div class="bandiv">
+            <div onclick="chooseBan(this)" class="ban">
+              Ban növü <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="banhdndiv">
+              <ul class="marka_ul" id="banAll">
+                <li class="bban mmark" onclick="chooseBanLi(this)">
+                  <i class="fa-solid fa-x"></i>Sıfırla
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ban novu Droptown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <!-- Droptown iller artanlarrr>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <div class="cirim">
+            <div class="artanil">
+              <div onclick="chooseart(this)" class="artil">
+                İl, min. <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="artilhdndiv">
+                <ul class="marka_ul" id="artilAll">
+                  <li class="aartil" onclick="chooseartli(this)">
+                    <i class="fa-solid fa-x"></i>&nbspSıfırla
+                  </li>
+                  <!-- Add year options here -->
+                  <li class="aartil" onclick="chooseartli(this)">2024</li>
+                  <li class="aartil" onclick="chooseartli(this)">2023</li>
+                  <!-- Add more years as needed -->
+                </ul>
+              </div>
+            </div>
+          
+            <div class="artanil">
+              <div onclick="chooseart1(this)" class="artill">
+                İl, max. <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="artilhdndi">
+                <ul class="marka_ul" id="artilAll1">
+                  <li class="aartil" onclick="chooseartli1(this)">
+                    <i class="fa-solid fa-x"></i>&nbspSıfırla
+                  </li>
+                  <!-- Add year options here -->
+                  <li class="aartil" onclick="chooseartli1(this)">2024</li>
+                  <li class="aartil" onclick="chooseartli1(this)">2023</li>
+                  <!-- Add more years as needed -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- ilerrr>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <!-- <div class="Iller">
+            <select id="artanIller">
+              <option hidden value="max">İl, min.</option>
+              <option value="marka" onclick="resetMark()">sifirla</option>
+            </select>
+          </div> -->
+
+          <!-- Droptown iller artanlarrr>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+          <!-- <div class="Iller">
+            <select id="azalanIller">
+              <option hidden value="min">maks.</option>
+              <option value="marka" onclick="resetMark()">sifirla</option>
+            </select>
+          </div> -->
+        </div>
+        <div class="anonce">
+          <p class="elan">Bu gün:<a href="" id="elanSayi"></a></p>
+          <div class="zero">
+            <span id="herseysl" onclick="herseyisil()" >Sıfırla</span>
+            <span>Daha çox filtr <i class="fa-solid fa-chevron-down"></i></span>
+            <button onclick="filtrle()" id="showAnnounce">Elanları göstər</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pre">
+      <div class="container">
+        <h3>PREMİUM ELANLAR</h3>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <h3 id="demo"></h3>
+        <div class="all-card">
+    
+        </div>
+      </div>
+    </main>
+    <script src="data.js"></script>
+    <script src="turbo.js"></script>
+  </body>
+</html>
